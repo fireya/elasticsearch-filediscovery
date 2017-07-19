@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:alpine
+FROM elasticsearch:5.5.0-alpine
 RUN bin/elasticsearch-plugin install discovery-file
 RUN bin/elasticsearch-plugin install ingest-attachment
 RUN bin/elasticsearch-plugin install repository-s3
